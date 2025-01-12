@@ -24,10 +24,10 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        // primary: {
-        //   DEFAULT: "hsl(var(--primary))",
-        //   foreground: "hsl(var(--primary-foreground))",
-        // },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -53,10 +53,6 @@ export default {
           "3": "hsl(var(--chart-3))",
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
-        },
-        primary: {
-          DEFAULT: "#E7C9A5",
-          admin: "#25388C",
         },
         green: {
           DEFAULT: "#027A48",
@@ -85,7 +81,7 @@ export default {
           800: "#F8FAFC",
         },
         dark: {
-          100: "#60100B",
+          100: "#FFFFFF",
           200: "#3A354E",
           300: "#232839",
           400: "#1E293B",
@@ -111,5 +107,6 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
